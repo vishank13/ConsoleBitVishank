@@ -13,9 +13,17 @@
 		42CFEFD1291283C900F11383 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFD0291283C900F11383 /* Constants.swift */; };
 		42CFEFD32912898800F11383 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFD22912898800F11383 /* AppConstants.swift */; };
 		42CFEFD529128A4C00F11383 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFD429128A4C00F11383 /* LoginViewModel.swift */; };
+		42CFEFD729129ABC00F11383 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFD629129ABC00F11383 /* ServiceLocator.swift */; };
+		42CFEFD929129B2F00F11383 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFD829129B2F00F11383 /* Enums.swift */; };
+		42CFEFDB29129B6300F11383 /* NSObject + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFDA29129B6300F11383 /* NSObject + Helper.swift */; };
+		42CFEFDD29129C2800F11383 /* ProjectWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFDC29129C2800F11383 /* ProjectWireframe.swift */; };
+		42CFEFDF29129EE400F11383 /* EmployeesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFDE29129EE400F11383 /* EmployeesListViewController.swift */; };
+		42CFEFE129129FB000F11383 /* EmployeesAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFE029129FB000F11383 /* EmployeesAPIRouter.swift */; };
+		42CFEFE32912A0E900F11383 /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFE22912A0E900F11383 /* EmployeesViewModel.swift */; };
+		42CFEFE52912ABDB00F11383 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42CFEFE42912ABDA00F11383 /* Dashboard.storyboard */; };
 		42D80E46291273F600197817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E45291273F600197817 /* AppDelegate.swift */; };
 		42D80E48291273F700197817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E47291273F700197817 /* SceneDelegate.swift */; };
-		42D80E4A291273F700197817 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E49291273F700197817 /* ViewController.swift */; };
+		42D80E4A291273F700197817 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E49291273F700197817 /* LoginViewController.swift */; };
 		42D80E4D291273F700197817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D80E4B291273F700197817 /* Main.storyboard */; };
 		42D80E50291273F700197817 /* ConsoleBitVishank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E4E291273F700197817 /* ConsoleBitVishank.xcdatamodeld */; };
 		42D80E52291273F800197817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D80E51291273F800197817 /* Assets.xcassets */; };
@@ -50,10 +58,18 @@
 		42CFEFD0291283C900F11383 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		42CFEFD22912898800F11383 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		42CFEFD429128A4C00F11383 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		42CFEFD629129ABC00F11383 /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		42CFEFD829129B2F00F11383 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		42CFEFDA29129B6300F11383 /* NSObject + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject + Helper.swift"; sourceTree = "<group>"; };
+		42CFEFDC29129C2800F11383 /* ProjectWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectWireframe.swift; sourceTree = "<group>"; };
+		42CFEFDE29129EE400F11383 /* EmployeesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesListViewController.swift; sourceTree = "<group>"; };
+		42CFEFE029129FB000F11383 /* EmployeesAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesAPIRouter.swift; sourceTree = "<group>"; };
+		42CFEFE22912A0E900F11383 /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
+		42CFEFE42912ABDA00F11383 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
 		42D80E42291273F600197817 /* ConsoleBitVishank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsoleBitVishank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D80E45291273F600197817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42D80E47291273F700197817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		42D80E49291273F700197817 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42D80E49291273F700197817 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		42D80E4C291273F700197817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		42D80E4F291273F700197817 /* ConsoleBitVishank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConsoleBitVishank.xcdatamodel; sourceTree = "<group>"; };
 		42D80E51291273F800197817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,9 +120,10 @@
 		42CFEFC62912822A00F11383 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				42CFEFC82912825600F11383 /* LoginModel.swift */,
-				42CFEFCC2912832100F11383 /* LoginAPIRouter.swift */,
-				42CFEFD429128A4C00F11383 /* LoginViewModel.swift */,
+				42CFEFF12912D42500F11383 /* Router */,
+				42CFEFF02912D41F00F11383 /* Model */,
+				42CFEFF22912D42900F11383 /* View Model */,
+				42CFEFEF2912D41600F11383 /* View Controller */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -114,7 +131,10 @@
 		42CFEFC72912823200F11383 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				42CFEFCA2912826B00F11383 /* EmployeesModel.swift */,
+				42CFEFED2912D3F300F11383 /* Router */,
+				42CFEFEB2912D3DA00F11383 /* Model */,
+				42CFEFEC2912D3E900F11383 /* View Model */,
+				42CFEFEE2912D3FB00F11383 /* View Controller */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -122,8 +142,11 @@
 		42CFEFCE291283A500F11383 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				42CFEFD22912898800F11383 /* AppConstants.swift */,
+				42CFEFE72912D3A300F11383 /* Project Router */,
+				42CFEFEA2912D3CF00F11383 /* App Constants */,
 				42CFEFCF291283B500F11383 /* Networking */,
+				42CFEFE92912D3C500F11383 /* Enum */,
+				42CFEFE82912D3BB00F11383 /* Extensions */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -134,6 +157,112 @@
 				42CFEFD0291283C900F11383 /* Constants.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		42CFEFE62912BF1D00F11383 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				42D80E4B291273F700197817 /* Main.storyboard */,
+				42CFEFE42912ABDA00F11383 /* Dashboard.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		42CFEFE72912D3A300F11383 /* Project Router */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFDC29129C2800F11383 /* ProjectWireframe.swift */,
+				42CFEFD629129ABC00F11383 /* ServiceLocator.swift */,
+			);
+			path = "Project Router";
+			sourceTree = "<group>";
+		};
+		42CFEFE82912D3BB00F11383 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFDA29129B6300F11383 /* NSObject + Helper.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		42CFEFE92912D3C500F11383 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFD829129B2F00F11383 /* Enums.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		42CFEFEA2912D3CF00F11383 /* App Constants */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFD22912898800F11383 /* AppConstants.swift */,
+			);
+			path = "App Constants";
+			sourceTree = "<group>";
+		};
+		42CFEFEB2912D3DA00F11383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFCA2912826B00F11383 /* EmployeesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42CFEFEC2912D3E900F11383 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFE22912A0E900F11383 /* EmployeesViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		42CFEFED2912D3F300F11383 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFE029129FB000F11383 /* EmployeesAPIRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		42CFEFEE2912D3FB00F11383 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFDE29129EE400F11383 /* EmployeesListViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		42CFEFEF2912D41600F11383 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42D80E49291273F700197817 /* LoginViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		42CFEFF02912D41F00F11383 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFC82912825600F11383 /* LoginModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42CFEFF12912D42500F11383 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFCC2912832100F11383 /* LoginAPIRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		42CFEFF22912D42900F11383 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFD429128A4C00F11383 /* LoginViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 		42D80E39291273F600197817 = {
@@ -159,12 +288,11 @@
 		42D80E44291273F600197817 /* ConsoleBitVishank */ = {
 			isa = PBXGroup;
 			children = (
+				42CFEFE62912BF1D00F11383 /* Storyboards */,
 				42CFEFCE291283A500F11383 /* Utilities */,
 				42CFEFC52912821C00F11383 /* Module */,
 				42D80E45291273F600197817 /* AppDelegate.swift */,
 				42D80E47291273F700197817 /* SceneDelegate.swift */,
-				42D80E49291273F700197817 /* ViewController.swift */,
-				42D80E4B291273F700197817 /* Main.storyboard */,
 				42D80E51291273F800197817 /* Assets.xcassets */,
 				42D80E53291273F800197817 /* LaunchScreen.storyboard */,
 				42D80E56291273F800197817 /* Info.plist */,
@@ -303,6 +431,7 @@
 				42D80E55291273F800197817 /* LaunchScreen.storyboard in Resources */,
 				42D80E52291273F800197817 /* Assets.xcassets in Resources */,
 				42D80E4D291273F700197817 /* Main.storyboard in Resources */,
+				42CFEFE52912ABDB00F11383 /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,15 +456,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CFEFDB29129B6300F11383 /* NSObject + Helper.swift in Sources */,
+				42CFEFE129129FB000F11383 /* EmployeesAPIRouter.swift in Sources */,
 				42CFEFC92912825600F11383 /* LoginModel.swift in Sources */,
 				42CFEFD32912898800F11383 /* AppConstants.swift in Sources */,
 				42D80E50291273F700197817 /* ConsoleBitVishank.xcdatamodeld in Sources */,
-				42D80E4A291273F700197817 /* ViewController.swift in Sources */,
+				42CFEFE32912A0E900F11383 /* EmployeesViewModel.swift in Sources */,
+				42CFEFDD29129C2800F11383 /* ProjectWireframe.swift in Sources */,
+				42CFEFDF29129EE400F11383 /* EmployeesListViewController.swift in Sources */,
+				42CFEFD729129ABC00F11383 /* ServiceLocator.swift in Sources */,
+				42D80E4A291273F700197817 /* LoginViewController.swift in Sources */,
 				42CFEFCB2912826B00F11383 /* EmployeesModel.swift in Sources */,
 				42D80E46291273F600197817 /* AppDelegate.swift in Sources */,
 				42D80E48291273F700197817 /* SceneDelegate.swift in Sources */,
 				42CFEFCD2912832100F11383 /* LoginAPIRouter.swift in Sources */,
 				42CFEFD529128A4C00F11383 /* LoginViewModel.swift in Sources */,
+				42CFEFD929129B2F00F11383 /* Enums.swift in Sources */,
 				42CFEFD1291283C900F11383 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
