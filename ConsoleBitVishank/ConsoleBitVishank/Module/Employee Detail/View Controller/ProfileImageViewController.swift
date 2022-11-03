@@ -28,6 +28,7 @@ class ProfileImageViewController: UIViewController {
     // MARK: SetUp Methods
     //-----------------------
     func setUp() {
+        self.navigationController?.navigationBar.tintColor = .white
         guard let profileImage else { return }
         profileImageView.image = profileImage
     }
