@@ -60,7 +60,7 @@ class LoginViewController: UIViewController {
     func gradientBg() {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.bounds
-        gradientLayer.colors = [#colorLiteral(red: 0, green: 0.5725490196, blue: 0.2705882353, alpha: 1).cgColor, UIColor(red: 252/255, green: 238/255, blue: 33/255, alpha: 1).cgColor]
+        gradientLayer.colors = AppColors.palette
         gradientLayer.startPoint = CGPoint(x: 0, y: 0) // Top left corner.
         gradientLayer.endPoint = CGPoint(x: 1, y: 1)
         gradientLayer.shouldRasterize = true
@@ -69,7 +69,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginPressed(_ sender: UIButton) {
         view.endEditing(true)
-        guard let email = emailIdTextField.text, let password = passwordTextField.text else { return }
+        guard let email = emailIdTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty else { return self.showAlert()       }
         loginViewModel?.validateUser(with: email, password: password) { response in
             guard let user = response.user else {
                 print("User not found")

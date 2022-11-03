@@ -34,6 +34,8 @@ class EmployeesListViewController: UIViewController {
         title = "Home"
         self.navigationItem.hidesBackButton = true
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        view.gradientBg()
+        employeesTableView.layer.backgroundColor = UIColor.clear.cgColor
     }
     
     func registerNib() {
@@ -53,7 +55,14 @@ class EmployeesListViewController: UIViewController {
         }
        
     }
-        
+    
+    @IBAction func filterPressed(_ sender: UIBarButtonItem) {
+        ProjectWireframe.navigateToFilterViewController(emp: employees, with: self.navigationController) { filteredList in
+            self.employees = filteredList
+            self.employeesTableView.reloadData()
+        }
+    }
+    
     @IBAction func addEmployeePressed(_ sender: UIBarButtonItem) {
     }
     
@@ -74,6 +83,7 @@ extension EmployeesListViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: EmployeeTableViewCell.className) as? EmployeeTableViewCell else { return UITableViewCell() }
         cell.bindData(employee: employees[indexPath.row])
+        cell.navigationController = self.navigationController
         return cell
     }
     

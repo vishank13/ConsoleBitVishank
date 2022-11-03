@@ -40,4 +40,20 @@ class ProjectWireframe {
         }
     }
     
+    static func navigateToProfileImageViewController(profileImage: UIImage, with navigationController: UINavigationController?) {
+        if let profileImageViewController = ServiceLocator.provideProfileImageViewController(), let navigationController {
+            navigationController.setNavigationBarHidden(false, animated: true)
+            profileImageViewController.profileImage = profileImage
+            navigationController.pushViewController(profileImageViewController, animated: true)
+        }
+    }
+    
+    static func navigateToFilterViewController(emp: [Employee], with navigationController: UINavigationController?, callback: @escaping ((_ filteredList: [Employee]) -> Void)) {
+        if let filterViewController = ServiceLocator.provideFilterViewController(), let navigationController {
+            navigationController.setNavigationBarHidden(false, animated: true)
+            filterViewController.emp = emp
+            filterViewController.callback = callback
+            navigationController.pushViewController(filterViewController, animated: true)
+        }
+    }
 }

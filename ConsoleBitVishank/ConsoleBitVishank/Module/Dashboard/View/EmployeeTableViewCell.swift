@@ -20,6 +20,7 @@ class EmployeeTableViewCell: UITableViewCell {
     @IBOutlet weak var salaryLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
+    var navigationController: UINavigationController?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -35,6 +36,13 @@ class EmployeeTableViewCell: UITableViewCell {
         employeeImageView.layer.cornerRadius = employeeImageView.bounds.height / 2
         employeeImageView.layer.borderWidth = 1
         employeeImageView.layer.borderColor = UIColor.lightGray.cgColor
+        baseBgView.layer.cornerRadius = 20
+    }
+    
+    func setUpTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        employeeImageView.isUserInteractionEnabled = true
+        employeeImageView.addGestureRecognizer(tap)
     }
     
     func bindData(employee: Employee) {
@@ -46,15 +54,20 @@ class EmployeeTableViewCell: UITableViewCell {
         let address = employee.address
         else { return }
         nameLabel.text = "Name: \(firstName) \(lastName)"
-        joiningDateLabel.text = joiningDate
+        joiningDateLabel.text = Helper.getDateFrom(string: joiningDate)
         designationLabel.text = "Designation: \(designation)"
         salaryLabel.text = "Salary: ₹\(salary)"
         addressLabel.text = "Address: \(address)"
         
         if let imageURL = URL(string: employee.photo ?? "") {
             employeeImageView.loadImage(from: imageURL)
+            setUpTapGesture()
         } else {
             employeeImageView.image = UIImage(systemName: "person.circle")
         }
+    }
+    
+    @objc func imageTapped() {
+        ProjectWireframe.navigateToProfileImageViewController(profileImage: employeeImageView.image!, with: self.navigationController)
     }
 }

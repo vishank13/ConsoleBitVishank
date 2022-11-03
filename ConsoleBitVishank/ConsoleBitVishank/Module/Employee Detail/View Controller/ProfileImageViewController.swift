@@ -11,10 +11,15 @@ class ProfileImageViewController: UIViewController {
 
     @IBOutlet weak var profileImageView: UIImageView!
     
+    var profileImage: UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setUp()
     }
 
+    func setUp() {
+        guard let profileImage else { return }
+        profileImageView.image = profileImage
+    }
 }

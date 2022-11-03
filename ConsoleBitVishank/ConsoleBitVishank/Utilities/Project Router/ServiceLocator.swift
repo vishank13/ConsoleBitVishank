@@ -39,6 +39,16 @@ class ServiceLocator {
         return vc
     }
     
+    static func provideProfileImageViewController() -> ProfileImageViewController? {
+        let storyboard = UIStoryboard(name: AppStoryboardName.dashboard.rawValue, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: ProfileImageViewController.className) as? ProfileImageViewController
+        return vc
+    }
     
+    static func provideFilterViewController() -> FilterViewController? {
+        let storyboard = UIStoryboard(name: AppStoryboardName.dashboard.rawValue, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: FilterViewController.className) as? FilterViewController
+        return vc
+    }
     
 }

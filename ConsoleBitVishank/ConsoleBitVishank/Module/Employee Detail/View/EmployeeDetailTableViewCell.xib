@@ -3,7 +3,6 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,30 +19,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a3y-dW-F4h">
-                                <rect key="frame" x="10.000000000000004" y="10" width="52.333333333333343" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="19.999999999999996" y="10" width="51.666666666666657" height="29"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TjH-EY-Voc">
-                                <rect key="frame" x="72.333333333333314" y="10" width="76.666666666666686" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="81.666666666666657" y="10" width="72.666666666666657" height="29"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TjH-EY-Voc" secondAttribute="trailing" constant="10" id="8aD-5S-jew"/>
-                            <constraint firstAttribute="bottom" secondItem="a3y-dW-F4h" secondAttribute="bottom" constant="10" id="Aqd-hb-XGf"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TjH-EY-Voc" secondAttribute="trailing" constant="20" id="8aD-5S-jew"/>
+                            <constraint firstAttribute="bottom" secondItem="a3y-dW-F4h" secondAttribute="bottom" constant="5" id="Aqd-hb-XGf"/>
                             <constraint firstItem="TjH-EY-Voc" firstAttribute="leading" secondItem="a3y-dW-F4h" secondAttribute="trailing" constant="10" id="MfD-aY-Ykt"/>
                             <constraint firstItem="a3y-dW-F4h" firstAttribute="top" secondItem="JvF-hz-dmo" secondAttribute="top" constant="10" id="RX3-ic-hEI"/>
                             <constraint firstItem="TjH-EY-Voc" firstAttribute="top" secondItem="JvF-hz-dmo" secondAttribute="top" constant="10" id="mBP-K5-EgK"/>
-                            <constraint firstItem="a3y-dW-F4h" firstAttribute="leading" secondItem="JvF-hz-dmo" secondAttribute="leading" constant="10" id="wdL-ZE-JiF"/>
-                            <constraint firstAttribute="bottom" secondItem="TjH-EY-Voc" secondAttribute="bottom" constant="10" id="zVh-sw-6vm"/>
+                            <constraint firstItem="a3y-dW-F4h" firstAttribute="leading" secondItem="JvF-hz-dmo" secondAttribute="leading" constant="20" id="wdL-ZE-JiF"/>
+                            <constraint firstAttribute="bottom" secondItem="TjH-EY-Voc" secondAttribute="bottom" constant="5" id="zVh-sw-6vm"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="JvF-hz-dmo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AEv-Hx-Ae5"/>
                     <constraint firstAttribute="trailing" secondItem="JvF-hz-dmo" secondAttribute="trailing" id="Eno-vY-FBV"/>
@@ -51,6 +51,7 @@
                     <constraint firstItem="JvF-hz-dmo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xuq-BB-3Tz"/>
                 </constraints>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="baseBgView" destination="JvF-hz-dmo" id="7hT-7V-dvr"/>
                 <outlet property="keyLabel" destination="a3y-dW-F4h" id="oU0-9p-0Dj"/>
@@ -59,9 +60,4 @@
             <point key="canvasLocation" x="28" y="21"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

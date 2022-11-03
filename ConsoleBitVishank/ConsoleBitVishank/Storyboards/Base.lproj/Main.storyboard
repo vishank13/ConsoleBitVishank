@@ -3,6 +3,7 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,21 +23,21 @@
                                         <rect key="frame" x="145" y="122.66666666666669" width="100" height="100"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ijp-jH-OUf">
-                                                <rect key="frame" x="25" y="24.999999999999986" width="50" height="50"/>
+                                                <rect key="frame" x="10" y="9.9999999999999858" width="80" height="80"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="50" id="a4n-sH-i7e"/>
-                                                    <constraint firstAttribute="height" constant="50" id="bOB-lW-l3H"/>
+                                                    <constraint firstAttribute="width" constant="80" id="a4n-sH-i7e"/>
+                                                    <constraint firstAttribute="height" constant="80" id="bOB-lW-l3H"/>
                                                 </constraints>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="ijp-jH-OUf" firstAttribute="centerY" secondItem="D67-vF-Zih" secondAttribute="centerY" id="4S1-Rb-Xnh"/>
-                                            <constraint firstItem="ijp-jH-OUf" firstAttribute="leading" secondItem="D67-vF-Zih" secondAttribute="leading" constant="25" id="5u9-cX-HUu"/>
-                                            <constraint firstAttribute="trailing" secondItem="ijp-jH-OUf" secondAttribute="trailing" constant="25" id="6OH-R4-38X"/>
+                                            <constraint firstItem="ijp-jH-OUf" firstAttribute="leading" secondItem="D67-vF-Zih" secondAttribute="leading" constant="10" id="5u9-cX-HUu"/>
+                                            <constraint firstAttribute="trailing" secondItem="ijp-jH-OUf" secondAttribute="trailing" constant="10" id="6OH-R4-38X"/>
                                             <constraint firstItem="ijp-jH-OUf" firstAttribute="centerX" secondItem="D67-vF-Zih" secondAttribute="centerX" id="CeH-f5-5Fc"/>
-                                            <constraint firstAttribute="bottom" secondItem="ijp-jH-OUf" secondAttribute="bottom" constant="25" id="Lmz-sw-UvL"/>
-                                            <constraint firstItem="ijp-jH-OUf" firstAttribute="top" secondItem="D67-vF-Zih" secondAttribute="top" constant="25" id="jyD-g0-ocd"/>
+                                            <constraint firstAttribute="bottom" secondItem="ijp-jH-OUf" secondAttribute="bottom" constant="10" id="Lmz-sw-UvL"/>
+                                            <constraint firstItem="ijp-jH-OUf" firstAttribute="top" secondItem="D67-vF-Zih" secondAttribute="top" constant="10" id="jyD-g0-ocd"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3x1-CQ-QXd">
@@ -138,6 +139,7 @@
                                 </constraints>
                             </view>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="GHV-4X-6jj"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nHZ-DO-UiU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Vpc-Ws-u14"/>

@@ -30,13 +30,16 @@ class EmployeeDetailViewController: UIViewController {
     
     func setUp() {
         self.navigationController?.navigationBar.prefersLargeTitles = false
-        
+        self.navigationController?.navigationBar.tintColor = .white
         profileImageView.layer.cornerRadius = profileImageView.bounds.height / 2
         profileImageView.layer.borderWidth = 1
         profileImageView.layer.borderColor = UIColor.lightGray.cgColor
+        view.gradientBg()
+        employeeDetailTableView.layer.cornerRadius = 20
         
         if let imageURL = URL(string: data?.photo ?? "") {
             profileImageView.loadImage(from: imageURL)
+            setUpTapGesture()
         } else {
             profileImageView.image = UIImage(systemName: "person.circle")
         }
@@ -46,23 +49,33 @@ class EmployeeDetailViewController: UIViewController {
         employeeDetailTableView.register(UINib(nibName: EmployeeDetailTableViewCell.className, bundle: nil), forCellReuseIdentifier: EmployeeDetailTableViewCell.className)
     }
     
+    func setUpTapGesture() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(imageTapped))
+        profileImageView.isUserInteractionEnabled = true
+        profileImageView.addGestureRecognizer(tap)
+    }
+    
     func parseData() {
         employee = [
             EmployeeDetail(key: "Name:", value: "\(data?.firstName ?? "") \(data?.lastName ?? "")"),
             EmployeeDetail(key: "ID:", value: "\(data?.id ?? "")"),
             EmployeeDetail(key: "Email ID:", value: data?.emailID ?? ""),
-            EmployeeDetail(key: "Date Of Birth:", value: data?.dob ?? ""),
-            EmployeeDetail(key: "Date Of Hire:", value: data?.doh ?? ""),
+            EmployeeDetail(key: "Date Of Birth:", value: Helper.getDateFrom(string: data?.dob ?? "")),
+            EmployeeDetail(key: "Date Of Hire:", value: Helper.getDateFrom(string: data?.dob ?? "")),
             EmployeeDetail(key: "Address:", value: data?.address ?? ""),
             EmployeeDetail(key: "City:", value: data?.city ?? ""),
             EmployeeDetail(key: "ZipCode:", value: data?.zipCode ?? ""),
             EmployeeDetail(key: "Country:", value: data?.country ?? ""),
             EmployeeDetail(key: "Phone No.:", value: data?.phone ?? ""),
-            EmployeeDetail(key: "Salary:", value: data?.salary ?? ""),
+            EmployeeDetail(key: "Salary:", value: "₹\(data?.salary ?? "")"),
             EmployeeDetail(key: "Designation:", value: data?.designation ?? ""),
             EmployeeDetail(key: "Organization Name:", value: data?.organization ?? ""),
             EmployeeDetail(key: "Status:", value: data?.status ?? ""),
         ]
+    }
+    
+    @objc func imageTapped() {
+        ProjectWireframe.navigateToProfileImageViewController(profileImage: profileImageView.image!, with: self.navigationController)
     }
 }
 

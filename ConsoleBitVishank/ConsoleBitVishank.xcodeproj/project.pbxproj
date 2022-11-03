@@ -20,6 +20,10 @@
 		424FB5792913C3E70021F4C3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB5782913C3E70021F4C3 /* CustomImageView.swift */; };
 		424FB57B2913C9770021F4C3 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB57A2913C9770021F4C3 /* NetworkMonitor.swift */; };
 		424FB57F2913D1CA0021F4C3 /* ProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB57E2913D1CA0021F4C3 /* ProfileImageViewController.swift */; };
+		42507E90291406DD006B64CB /* UIViewController + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42507E8F291406DD006B64CB /* UIViewController + Helper.swift */; };
+		426E07DF2913F01C0027DC24 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426E07DE2913F01C0027DC24 /* FilterViewController.swift */; };
+		426E07E12913FA0B0027DC24 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426E07E02913FA0B0027DC24 /* AppColors.swift */; };
+		426E07E32913FAB10027DC24 /* UIView + Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426E07E22913FAB10027DC24 /* UIView + Helper.swift */; };
 		42CFEFC92912825600F11383 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFC82912825600F11383 /* LoginModel.swift */; };
 		42CFEFCB2912826B00F11383 /* EmployeesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFCA2912826B00F11383 /* EmployeesModel.swift */; };
 		42CFEFCD2912832100F11383 /* LoginAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFCC2912832100F11383 /* LoginAPIRouter.swift */; };
@@ -72,6 +76,10 @@
 		424FB5782913C3E70021F4C3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
 		424FB57A2913C9770021F4C3 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		424FB57E2913D1CA0021F4C3 /* ProfileImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageViewController.swift; sourceTree = "<group>"; };
+		42507E8F291406DD006B64CB /* UIViewController + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Helper.swift"; sourceTree = "<group>"; };
+		426E07DE2913F01C0027DC24 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		426E07E02913FA0B0027DC24 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		426E07E22913FAB10027DC24 /* UIView + Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Helper.swift"; sourceTree = "<group>"; };
 		42CFEFC82912825600F11383 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		42CFEFCA2912826B00F11383 /* EmployeesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesModel.swift; sourceTree = "<group>"; };
 		42CFEFCC2912832100F11383 /* LoginAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIRouter.swift; sourceTree = "<group>"; };
@@ -170,9 +178,18 @@
 			path = CoreDataManager;
 			sourceTree = "<group>";
 		};
+		426E07DD2913F0090027DC24 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				426E07DE2913F01C0027DC24 /* FilterViewController.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
 		42CFEFC52912821C00F11383 /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				426E07DD2913F0090027DC24 /* Filter */,
 				42CFEFC72912823200F11383 /* Dashboard */,
 				42CFEFC62912822A00F11383 /* Login */,
 				42CFF000291393ED00F11383 /* Employee Detail */,
@@ -248,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				42CFEFDA29129B6300F11383 /* NSObject + Helper.swift */,
+				426E07E22913FAB10027DC24 /* UIView + Helper.swift */,
+				42507E8F291406DD006B64CB /* UIViewController + Helper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,6 +283,7 @@
 			isa = PBXGroup;
 			children = (
 				42CFEFD22912898800F11383 /* AppConstants.swift */,
+				426E07E02913FA0B0027DC24 /* AppColors.swift */,
 			);
 			path = "App Constants";
 			sourceTree = "<group>";
@@ -555,6 +575,7 @@
 				424FB5742913BCE80021F4C3 /* EmployeeDetailTableViewCell.xib in Sources */,
 				424FB5792913C3E70021F4C3 /* CustomImageView.swift in Sources */,
 				424FB5732913BCE40021F4C3 /* EmployeeTableViewCell.xib in Sources */,
+				426E07E12913FA0B0027DC24 /* AppColors.swift in Sources */,
 				42CFEFDB29129B6300F11383 /* NSObject + Helper.swift in Sources */,
 				42CFEFE129129FB000F11383 /* EmployeesAPIRouter.swift in Sources */,
 				42CFEFC92912825600F11383 /* LoginModel.swift in Sources */,
@@ -571,12 +592,15 @@
 				424FB5692913AD680021F4C3 /* Employee+CoreDataProperties.swift in Sources */,
 				42CFEFD729129ABC00F11383 /* ServiceLocator.swift in Sources */,
 				42D80E4A291273F700197817 /* LoginViewController.swift in Sources */,
+				426E07E32913FAB10027DC24 /* UIView + Helper.swift in Sources */,
 				42CFEFCB2912826B00F11383 /* EmployeesModel.swift in Sources */,
 				424FB57F2913D1CA0021F4C3 /* ProfileImageViewController.swift in Sources */,
 				42D80E46291273F600197817 /* AppDelegate.swift in Sources */,
 				42D80E48291273F700197817 /* SceneDelegate.swift in Sources */,
 				42CFEFCD2912832100F11383 /* LoginAPIRouter.swift in Sources */,
+				426E07DF2913F01C0027DC24 /* FilterViewController.swift in Sources */,
 				42131DC62913DCBB0064AB96 /* ConsoleBitVishank.xcdatamodeld in Sources */,
+				42507E90291406DD006B64CB /* UIViewController + Helper.swift in Sources */,
 				42CFEFD529128A4C00F11383 /* LoginViewModel.swift in Sources */,
 				42CFEFD929129B2F00F11383 /* Enums.swift in Sources */,
 				42CFEFD1291283C900F11383 /* Constants.swift in Sources */,
