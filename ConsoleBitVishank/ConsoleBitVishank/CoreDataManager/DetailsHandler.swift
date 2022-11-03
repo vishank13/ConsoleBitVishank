@@ -11,7 +11,7 @@ import UIKit
 
 class DetailHandler {
     
-    func saveData( emplyeeData: EmployeeData) {
+    static func saveData( emplyeeData: EmployeeData) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let employeeObj = NSEntityDescription.insertNewObject(forEntityName: "Employee", into: context) as! Employee

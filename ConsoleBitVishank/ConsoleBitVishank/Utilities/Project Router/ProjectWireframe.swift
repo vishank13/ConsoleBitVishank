@@ -15,7 +15,7 @@ class ProjectWireframe {
             navigationController.popToRootViewController(animated: true)
         }
     }
-
+    
     static func navigateToLoginViewController(with navigationController: UINavigationController?) {
         if let loginViewController = ServiceLocator.provideLoginViewController(), let navigationController {
             loginViewController.loginViewModel = LoginViewModel()

@@ -13,7 +13,7 @@ class EmployeesViewModel {
         EmployeesAPIRouter().getAllEmployees { response in
             DetailHandler.deleteAll()
             response.results?.forEach({ data in
-                DetailHandler().saveData(emplyeeData: data)
+                DetailHandler.saveData(emplyeeData: data)
             })
             success(response)
         }

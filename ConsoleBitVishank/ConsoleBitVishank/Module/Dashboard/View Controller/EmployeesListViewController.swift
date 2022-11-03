@@ -19,6 +19,9 @@ class EmployeesListViewController: UIViewController {
     var employeesViewModel: EmployeesViewModel?
     var employees = [Employee]()
     
+    //-----------------------
+    // MARK: Lifecycle Methods
+    //-----------------------
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -53,9 +56,12 @@ class EmployeesListViewController: UIViewController {
         } else {
             employees = DetailHandler.fetchData()
         }
-       
+        
     }
     
+    //-----------------------
+    // MARK: Action Outlets
+    //-----------------------
     @IBAction func filterPressed(_ sender: UIBarButtonItem) {
         ProjectWireframe.navigateToFilterViewController(emp: employees, with: self.navigationController) { filteredList in
             self.employees = filteredList
@@ -64,6 +70,7 @@ class EmployeesListViewController: UIViewController {
     }
     
     @IBAction func addEmployeePressed(_ sender: UIBarButtonItem) {
+        //to be impleamented
     }
     
     @IBAction func logoutPressed(_ sender: UIBarButtonItem) {

@@ -13,14 +13,22 @@ struct EmployeeDetail {
 }
 
 class EmployeeDetailViewController: UIViewController {
-    
+    //-----------------------
+    // MARK: Outlets
+    //-----------------------
     @IBOutlet weak var baseBgView: UIView!
     @IBOutlet weak var profileImageView: CustomImageView!
     @IBOutlet weak var employeeDetailTableView: UITableView!
     
+    //-----------------------
+    // MARK: Properties
+    //-----------------------
     var employee = [EmployeeDetail]()
     var data: Employee?
     
+    //-----------------------
+    // MARK: Lifecycle Methods
+    //-----------------------
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -28,6 +36,9 @@ class EmployeeDetailViewController: UIViewController {
         parseData()
     }
     
+    //-----------------------
+    // MARK: SetUp Methods
+    //-----------------------
     func setUp() {
         self.navigationController?.navigationBar.prefersLargeTitles = false
         self.navigationController?.navigationBar.tintColor = .white
@@ -55,6 +66,9 @@ class EmployeeDetailViewController: UIViewController {
         profileImageView.addGestureRecognizer(tap)
     }
     
+    //-----------------------
+    // MARK: Parse Data
+    //-----------------------
     func parseData() {
         employee = [
             EmployeeDetail(key: "Name:", value: "\(data?.firstName ?? "") \(data?.lastName ?? "")"),
@@ -74,6 +88,9 @@ class EmployeeDetailViewController: UIViewController {
         ]
     }
     
+    //-----------------------
+    // MARK: Objective Methods
+    //-----------------------
     @objc func imageTapped() {
         ProjectWireframe.navigateToProfileImageViewController(profileImage: profileImageView.image!, with: self.navigationController)
     }
@@ -92,6 +109,5 @@ extension EmployeeDetailViewController: UITableViewDelegate, UITableViewDataSour
         cell.bindData(employee: employee[indexPath.row])
         return cell
     }
-    
     
 }

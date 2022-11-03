@@ -9,7 +9,7 @@ import Foundation
 import SwiftKeychainWrapper
 
 class LoginViewModel {
-        
+    
     func validateUser(with email: String, password: String, success: @escaping (_ response: Login) -> Void) {
         LoginAPIRouter().validateUser(email: email, password: password) { response in
             if let accessToken = response.access {

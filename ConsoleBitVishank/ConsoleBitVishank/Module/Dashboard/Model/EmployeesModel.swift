@@ -29,7 +29,7 @@ struct EmployeeData: Codable {
     let designation: String?
     let organizationName: String?
     let status: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case firstName = "first_name"

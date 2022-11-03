@@ -9,6 +9,7 @@ import Foundation
 import SwiftKeychainWrapper
 
 class Helper {
+    
     static func performLogout() {
         UserDefaults.standard.set(false, forKey: AppConstants.loggedIn)
         KeychainWrapper.standard.removeObject(forKey: AppConstants.accessToken)
@@ -20,9 +21,9 @@ class Helper {
             return string
         }
         let df = DateFormatter()
-        df.dateFormat = "yyyy-MM-dd"
+        df.dateFormat = AppConstants.apiDateFormat
         guard let d = df.date(from: string) else { return string }
-        df.dateFormat = "dd MMM YYYY"
+        df.dateFormat = AppConstants.appDateFormat
         return df.string(from: d)
     }
 }

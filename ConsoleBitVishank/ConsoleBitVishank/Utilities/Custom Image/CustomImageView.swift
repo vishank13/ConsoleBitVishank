@@ -22,7 +22,6 @@ class CustomImageView: UIImageView {
         
         if let imageFromCache = imageCache.object(forKey: url.absoluteString as AnyObject) as? UIImage {
             self.image = imageFromCache
-//            indicator.stopAnimating()
             return
         }
         
@@ -35,7 +34,6 @@ class CustomImageView: UIImageView {
             
             DispatchQueue.main.async {
                 self.image = newImage
-//                indicator.stopAnimating()
             }
         }
         task.resume()

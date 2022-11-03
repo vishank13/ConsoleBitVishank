@@ -10,4 +10,6 @@ import Foundation
 struct AppConstants {
     static let loggedIn = "isLoggedIn"
     static let accessToken = "accessToken"
+    static let apiDateFormat = "yyyy-MM-dd"
+    static let appDateFormat = "dd MMM YYYY"
 }

@@ -20,8 +20,14 @@ class EmployeeTableViewCell: UITableViewCell {
     @IBOutlet weak var salaryLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     
+    //-----------------------
+    // MARK: Properties
+    //-----------------------
     var navigationController: UINavigationController?
     
+    //-----------------------
+    // MARK: Lifeycle Methods
+    //-----------------------
     override func awakeFromNib() {
         super.awakeFromNib()
         setUp()
@@ -32,6 +38,9 @@ class EmployeeTableViewCell: UITableViewCell {
         
     }
     
+    //-----------------------
+    // MARK: SetUp Methods
+    //-----------------------
     func setUp() {
         employeeImageView.layer.cornerRadius = employeeImageView.bounds.height / 2
         employeeImageView.layer.borderWidth = 1
@@ -45,13 +54,16 @@ class EmployeeTableViewCell: UITableViewCell {
         employeeImageView.addGestureRecognizer(tap)
     }
     
+    //-----------------------
+    // MARK: Bind Data
+    //-----------------------
     func bindData(employee: Employee) {
         guard let firstName = employee.firstName,
-        let lastName = employee.lastName,
-        let joiningDate = employee.doh,
-        let designation = employee.designation,
-        let salary = employee.salary,
-        let address = employee.address
+              let lastName = employee.lastName,
+              let joiningDate = employee.doh,
+              let designation = employee.designation,
+              let salary = employee.salary,
+              let address = employee.address
         else { return }
         nameLabel.text = "Name: \(firstName) \(lastName)"
         joiningDateLabel.text = Helper.getDateFrom(string: joiningDate)
@@ -67,6 +79,9 @@ class EmployeeTableViewCell: UITableViewCell {
         }
     }
     
+    //-----------------------
+    // MARK: Objective Methods
+    //-----------------------
     @objc func imageTapped() {
         ProjectWireframe.navigateToProfileImageViewController(profileImage: employeeImageView.image!, with: self.navigationController)
     }

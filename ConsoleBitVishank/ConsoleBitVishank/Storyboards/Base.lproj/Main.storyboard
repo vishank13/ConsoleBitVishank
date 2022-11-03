@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -39,6 +39,10 @@
                                             <constraint firstAttribute="bottom" secondItem="ijp-jH-OUf" secondAttribute="bottom" constant="10" id="Lmz-sw-UvL"/>
                                             <constraint firstItem="ijp-jH-OUf" firstAttribute="top" secondItem="D67-vF-Zih" secondAttribute="top" constant="10" id="jyD-g0-ocd"/>
                                         </constraints>
+                                    </view>
+                                    <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Boh-GU-sEg">
+                                        <rect key="frame" x="40" y="272.66666666666669" width="310" height="299.00000000000006"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3x1-CQ-QXd">
                                         <rect key="frame" x="40" y="272.66666666666669" width="310" height="299.00000000000006"/>
@@ -94,7 +98,6 @@
                                                         </constraints>
                                                     </view>
                                                 </subviews>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="III-Tw-nJh">
                                                 <rect key="frame" x="20" y="229" width="270" height="50"/>
@@ -112,7 +115,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="SqA-g7-Z16" firstAttribute="leading" secondItem="3x1-CQ-QXd" secondAttribute="leading" constant="20" id="5lx-gv-UOH"/>
                                             <constraint firstAttribute="bottom" secondItem="III-Tw-nJh" secondAttribute="bottom" constant="20" id="6PJ-FE-DMw"/>
@@ -127,15 +130,19 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="3x1-CQ-QXd" firstAttribute="centerY" secondItem="nHZ-DO-UiU" secondAttribute="centerY" id="ETf-wb-MBy"/>
                                     <constraint firstItem="3x1-CQ-QXd" firstAttribute="leading" secondItem="nHZ-DO-UiU" secondAttribute="leading" constant="40" id="Ebn-4g-TtW"/>
                                     <constraint firstItem="D67-vF-Zih" firstAttribute="centerX" secondItem="nHZ-DO-UiU" secondAttribute="centerX" id="If7-Mw-Hw2"/>
                                     <constraint firstItem="3x1-CQ-QXd" firstAttribute="centerX" secondItem="nHZ-DO-UiU" secondAttribute="centerX" id="OOd-Iu-MEh"/>
                                     <constraint firstItem="3x1-CQ-QXd" firstAttribute="top" secondItem="D67-vF-Zih" secondAttribute="bottom" constant="50" id="PyT-r2-eDX"/>
+                                    <constraint firstItem="Boh-GU-sEg" firstAttribute="top" secondItem="3x1-CQ-QXd" secondAttribute="top" id="T7v-b4-cqS"/>
                                     <constraint firstItem="D67-vF-Zih" firstAttribute="top" relation="greaterThanOrEqual" secondItem="nHZ-DO-UiU" secondAttribute="top" constant="100" id="bl0-DV-uaY"/>
+                                    <constraint firstItem="Boh-GU-sEg" firstAttribute="bottom" secondItem="3x1-CQ-QXd" secondAttribute="bottom" id="fbT-iE-1Hc"/>
+                                    <constraint firstItem="Boh-GU-sEg" firstAttribute="trailing" secondItem="3x1-CQ-QXd" secondAttribute="trailing" id="hKB-dP-mWk"/>
                                     <constraint firstAttribute="trailing" secondItem="3x1-CQ-QXd" secondAttribute="trailing" constant="40" id="lPX-im-jrV"/>
+                                    <constraint firstItem="Boh-GU-sEg" firstAttribute="leading" secondItem="3x1-CQ-QXd" secondAttribute="leading" id="lkp-Tr-nZf"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -153,7 +160,7 @@
                         <outlet property="baseBgView" destination="nHZ-DO-UiU" id="I69-cK-kkQ"/>
                         <outlet property="emailIdBgView" destination="OnH-iV-Md4" id="vZo-bL-Vmj"/>
                         <outlet property="emailIdTextField" destination="eZA-ip-jXr" id="YVe-AS-cMd"/>
-                        <outlet property="loginBgView" destination="3x1-CQ-QXd" id="LIe-76-DZM"/>
+                        <outlet property="loginBgView" destination="Boh-GU-sEg" id="DyO-pT-WNO"/>
                         <outlet property="loginButton" destination="III-Tw-nJh" id="1tZ-9F-Iao"/>
                         <outlet property="logoBgView" destination="D67-vF-Zih" id="a9g-PX-c7w"/>
                         <outlet property="logoImageView" destination="ijp-jH-OUf" id="eDH-XM-BLZ"/>
