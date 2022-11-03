@@ -7,14 +7,19 @@
 
 import Foundation
 import Alamofire
+import SwiftKeychainWrapper
 
 class EmployeesAPIRouter {
     
-    let headers: HTTPHeaders = [
-        "Authorization": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY3NTU0MzE5LCJqdGkiOiJkNzJjNjA3ZDViMjM0ZWM5YWQwNmUzNmZkMzM2Y2NlYiIsInVzZXJfaWQiOjN9.6b3aCkpLv2YqE1fHsHP6zj9byKFzQEd7WRKRgjfzxVI"]
+    let accessToken = KeychainWrapper.standard.string(forKey: AppConstants.accessToken)
     
     func getAllEmployees(success: @escaping (_ response: Employees) -> Void) {
+        guard let accessToken else { return }
+        let headers: HTTPHeaders = [
+            "Authorization": "Bearer \(accessToken)"]
+        
         AF.request(BaseURL.baseURL + Endpoints.getEmployee, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers).responseDecodable(of: Employees.self) { (response) in
+            print(response)
             switch response.result {
             case .success:
                 guard let employees = response.value else { return }

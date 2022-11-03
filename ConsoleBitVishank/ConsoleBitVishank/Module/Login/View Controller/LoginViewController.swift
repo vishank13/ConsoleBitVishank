@@ -12,7 +12,6 @@ class LoginViewController: UIViewController {
     // MARK: Outlets
     //-----------------------
     @IBOutlet weak var baseBgView: UIView!
-    
     @IBOutlet weak var logoBgView: UIView!
     @IBOutlet weak var logoImageView: UIImageView!
     @IBOutlet weak var loginBgView: UIView!
@@ -41,7 +40,7 @@ class LoginViewController: UIViewController {
     // MARK: SetUp Methods
     //-----------------------
     func setUp() {
-        gradientBg()
+        view.gradientBg()
         logoBgView.layer.cornerRadius = 50
         loginBgView.layer.cornerRadius = 25
         
@@ -57,19 +56,12 @@ class LoginViewController: UIViewController {
         loginButton.backgroundColor = UIColor.link
     }
     
-    func gradientBg() {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = view.bounds
-        gradientLayer.colors = [#colorLiteral(red: 0, green: 0.5725490196, blue: 0.2705882353, alpha: 1).cgColor, UIColor(red: 252/255, green: 238/255, blue: 33/255, alpha: 1).cgColor]
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0) // Top left corner.
-        gradientLayer.endPoint = CGPoint(x: 1, y: 1)
-        gradientLayer.shouldRasterize = true
-        baseBgView.layer.insertSublayer(gradientLayer, at: 0)
-    }
-    
+    //-----------------------
+    // MARK: Action Outlets
+    //-----------------------
     @IBAction func loginPressed(_ sender: UIButton) {
         view.endEditing(true)
-        guard let email = emailIdTextField.text, let password = passwordTextField.text else { return }
+        guard let email = emailIdTextField.text, let password = passwordTextField.text, !email.isEmpty, !password.isEmpty else { return self.showAlert() }
         loginViewModel?.validateUser(with: email, password: password) { response in
             guard let user = response.user else {
                 print("User not found")
@@ -79,7 +71,6 @@ class LoginViewController: UIViewController {
             ProjectWireframe.navigateToEmployeesListViewController(with: self.navigationController)
         }
     }
-    
     
 }
 

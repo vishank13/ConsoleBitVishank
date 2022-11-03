@@ -11,3 +11,10 @@ enum AppStoryboardName: String {
     case main = "Main"
     case dashboard = "Dashboard"
 }
+
+enum FilterType {
+    case name
+    case designation
+    case address
+    case date
+}

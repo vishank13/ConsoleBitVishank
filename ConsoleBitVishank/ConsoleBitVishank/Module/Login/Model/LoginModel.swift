@@ -16,7 +16,7 @@ struct Login: Codable {
 struct User: Codable {
     let id: Int?
     let firstName, lastName, email: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case firstName = "first_name"

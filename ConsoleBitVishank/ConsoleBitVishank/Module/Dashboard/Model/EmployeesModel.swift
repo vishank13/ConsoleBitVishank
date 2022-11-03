@@ -8,28 +8,28 @@
 import Foundation
 
 struct Employees: Codable {
-    let count: Int
-    let employee: [Employee]
+    let count: Int?
+    let results: [EmployeeData]?
 }
 
 // MARK: - Employee
-struct Employee: Codable {
-    let id: Int
-    let firstName: String
-    let lastName: String
-    let email: String
-    let dob, hireDate: String
-    let address: String
-    let city: String
-    let zipCode: String
-    let country: String
-    let phone: String
+struct EmployeeData: Codable {
+    let id: Int?
+    let firstName: String?
+    let lastName: String?
+    let email: String?
+    let dob, hireDate: String?
+    let address: String?
+    let city: String?
+    let zipCode: String?
+    let country: String?
+    let phone: String?
     let photo: String?
-    let salary: String
-    let designation: String
-    let organizationName: String
-    let status: String
-
+    let salary: String?
+    let designation: String?
+    let organizationName: String?
+    let status: String?
+    
     enum CodingKeys: String, CodingKey {
         case id
         case firstName = "first_name"
