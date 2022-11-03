@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42131DC62913DCBB0064AB96 /* ConsoleBitVishank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42131DC32913DBD00064AB96 /* ConsoleBitVishank.xcdatamodeld */; };
+		424FB5682913AD680021F4C3 /* Employee+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB5662913AD680021F4C3 /* Employee+CoreDataClass.swift */; };
+		424FB5692913AD680021F4C3 /* Employee+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB5672913AD680021F4C3 /* Employee+CoreDataProperties.swift */; };
+		424FB56B2913B0AC0021F4C3 /* DetailsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB56A2913B0AB0021F4C3 /* DetailsHandler.swift */; };
+		424FB56D2913BBF80021F4C3 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42CFEFE42912ABDA00F11383 /* Dashboard.storyboard */; };
+		424FB56E2913BBFC0021F4C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D80E4B291273F700197817 /* Main.storyboard */; };
+		424FB56F2913BC040021F4C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D80E51291273F800197817 /* Assets.xcassets */; };
+		424FB5702913BC160021F4C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D80E53291273F800197817 /* LaunchScreen.storyboard */; };
+		424FB5732913BCE40021F4C3 /* EmployeeTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFF82912E03600F11383 /* EmployeeTableViewCell.xib */; };
+		424FB5742913BCE80021F4C3 /* EmployeeDetailTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 42CFF002291396C400F11383 /* EmployeeDetailTableViewCell.xib */; };
+		424FB5792913C3E70021F4C3 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB5782913C3E70021F4C3 /* CustomImageView.swift */; };
+		424FB57B2913C9770021F4C3 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB57A2913C9770021F4C3 /* NetworkMonitor.swift */; };
+		424FB57F2913D1CA0021F4C3 /* ProfileImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424FB57E2913D1CA0021F4C3 /* ProfileImageViewController.swift */; };
 		42CFEFC92912825600F11383 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFC82912825600F11383 /* LoginModel.swift */; };
 		42CFEFCB2912826B00F11383 /* EmployeesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFCA2912826B00F11383 /* EmployeesModel.swift */; };
 		42CFEFCD2912832100F11383 /* LoginAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFCC2912832100F11383 /* LoginAPIRouter.swift */; };
@@ -20,14 +33,14 @@
 		42CFEFDF29129EE400F11383 /* EmployeesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFDE29129EE400F11383 /* EmployeesListViewController.swift */; };
 		42CFEFE129129FB000F11383 /* EmployeesAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFE029129FB000F11383 /* EmployeesAPIRouter.swift */; };
 		42CFEFE32912A0E900F11383 /* EmployeesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFE22912A0E900F11383 /* EmployeesViewModel.swift */; };
-		42CFEFE52912ABDB00F11383 /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42CFEFE42912ABDA00F11383 /* Dashboard.storyboard */; };
+		42CFEFF52912DBB300F11383 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 42CFEFF42912DBB300F11383 /* SwiftKeychainWrapper */; };
+		42CFEFF92912E03600F11383 /* EmployeeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFF72912E03600F11383 /* EmployeeTableViewCell.swift */; };
+		42CFEFFD2913904700F11383 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFFC2913904700F11383 /* Helper.swift */; };
+		42CFEFFF291393E900F11383 /* EmployeeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFEFFE291393E900F11383 /* EmployeeDetailViewController.swift */; };
+		42CFF003291396C400F11383 /* EmployeeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CFF001291396C400F11383 /* EmployeeDetailTableViewCell.swift */; };
 		42D80E46291273F600197817 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E45291273F600197817 /* AppDelegate.swift */; };
 		42D80E48291273F700197817 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E47291273F700197817 /* SceneDelegate.swift */; };
 		42D80E4A291273F700197817 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E49291273F700197817 /* LoginViewController.swift */; };
-		42D80E4D291273F700197817 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D80E4B291273F700197817 /* Main.storyboard */; };
-		42D80E50291273F700197817 /* ConsoleBitVishank.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E4E291273F700197817 /* ConsoleBitVishank.xcdatamodeld */; };
-		42D80E52291273F800197817 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42D80E51291273F800197817 /* Assets.xcassets */; };
-		42D80E55291273F800197817 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42D80E53291273F800197817 /* LaunchScreen.storyboard */; };
 		42D80E60291273F800197817 /* ConsoleBitVishankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E5F291273F800197817 /* ConsoleBitVishankTests.swift */; };
 		42D80E6A291273F800197817 /* ConsoleBitVishankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E69291273F800197817 /* ConsoleBitVishankUITests.swift */; };
 		42D80E6C291273F800197817 /* ConsoleBitVishankUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42D80E6B291273F800197817 /* ConsoleBitVishankUITestsLaunchTests.swift */; };
@@ -52,6 +65,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42131DC42913DBD00064AB96 /* ConsoleBitVishank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConsoleBitVishank.xcdatamodel; sourceTree = "<group>"; };
+		424FB5662913AD680021F4C3 /* Employee+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataClass.swift"; sourceTree = "<group>"; };
+		424FB5672913AD680021F4C3 /* Employee+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Employee+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		424FB56A2913B0AB0021F4C3 /* DetailsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsHandler.swift; sourceTree = "<group>"; };
+		424FB5782913C3E70021F4C3 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		424FB57A2913C9770021F4C3 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		424FB57E2913D1CA0021F4C3 /* ProfileImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageViewController.swift; sourceTree = "<group>"; };
 		42CFEFC82912825600F11383 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		42CFEFCA2912826B00F11383 /* EmployeesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesModel.swift; sourceTree = "<group>"; };
 		42CFEFCC2912832100F11383 /* LoginAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAPIRouter.swift; sourceTree = "<group>"; };
@@ -66,12 +86,17 @@
 		42CFEFE029129FB000F11383 /* EmployeesAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesAPIRouter.swift; sourceTree = "<group>"; };
 		42CFEFE22912A0E900F11383 /* EmployeesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeesViewModel.swift; sourceTree = "<group>"; };
 		42CFEFE42912ABDA00F11383 /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		42CFEFF72912E03600F11383 /* EmployeeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeTableViewCell.swift; sourceTree = "<group>"; };
+		42CFEFF82912E03600F11383 /* EmployeeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeTableViewCell.xib; sourceTree = "<group>"; };
+		42CFEFFC2913904700F11383 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		42CFEFFE291393E900F11383 /* EmployeeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailViewController.swift; sourceTree = "<group>"; };
+		42CFF001291396C400F11383 /* EmployeeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailTableViewCell.swift; sourceTree = "<group>"; };
+		42CFF002291396C400F11383 /* EmployeeDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeDetailTableViewCell.xib; sourceTree = "<group>"; };
 		42D80E42291273F600197817 /* ConsoleBitVishank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConsoleBitVishank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42D80E45291273F600197817 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42D80E47291273F700197817 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		42D80E49291273F700197817 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		42D80E4C291273F700197817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		42D80E4F291273F700197817 /* ConsoleBitVishank.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ConsoleBitVishank.xcdatamodel; sourceTree = "<group>"; };
 		42D80E51291273F800197817 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42D80E54291273F800197817 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42D80E56291273F800197817 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42CFEFF52912DBB300F11383 /* SwiftKeychainWrapper in Frameworks */,
 				42D80E7A2912760900197817 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,11 +134,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42131DC72913DCF30064AB96 /* Custom Image */ = {
+			isa = PBXGroup;
+			children = (
+				424FB5782913C3E70021F4C3 /* CustomImageView.swift */,
+			);
+			path = "Custom Image";
+			sourceTree = "<group>";
+		};
+		424FB57C2913D1930021F4C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42CFF001291396C400F11383 /* EmployeeDetailTableViewCell.swift */,
+				42CFF002291396C400F11383 /* EmployeeDetailTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		424FB57D2913D19A0021F4C3 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFFE291393E900F11383 /* EmployeeDetailViewController.swift */,
+				424FB57E2913D1CA0021F4C3 /* ProfileImageViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		424FB5802913D31F0021F4C3 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				424FB56A2913B0AB0021F4C3 /* DetailsHandler.swift */,
+				424FB5662913AD680021F4C3 /* Employee+CoreDataClass.swift */,
+				424FB5672913AD680021F4C3 /* Employee+CoreDataProperties.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
 		42CFEFC52912821C00F11383 /* Module */ = {
 			isa = PBXGroup;
 			children = (
 				42CFEFC72912823200F11383 /* Dashboard */,
 				42CFEFC62912822A00F11383 /* Login */,
+				42CFF000291393ED00F11383 /* Employee Detail */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -133,6 +196,7 @@
 			children = (
 				42CFEFED2912D3F300F11383 /* Router */,
 				42CFEFEB2912D3DA00F11383 /* Model */,
+				42CFEFF62912E01D00F11383 /* View */,
 				42CFEFEC2912D3E900F11383 /* View Model */,
 				42CFEFEE2912D3FB00F11383 /* View Controller */,
 			);
@@ -142,6 +206,8 @@
 		42CFEFCE291283A500F11383 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				42131DC72913DCF30064AB96 /* Custom Image */,
+				42CFEFFB2913903B00F11383 /* Helper */,
 				42CFEFE72912D3A300F11383 /* Project Router */,
 				42CFEFEA2912D3CF00F11383 /* App Constants */,
 				42CFEFCF291283B500F11383 /* Networking */,
@@ -155,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				42CFEFD0291283C900F11383 /* Constants.swift */,
+				424FB57A2913C9770021F4C3 /* NetworkMonitor.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -265,6 +332,32 @@
 			path = "View Model";
 			sourceTree = "<group>";
 		};
+		42CFEFF62912E01D00F11383 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFF72912E03600F11383 /* EmployeeTableViewCell.swift */,
+				42CFEFF82912E03600F11383 /* EmployeeTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42CFEFFB2913903B00F11383 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				42CFEFFC2913904700F11383 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		42CFF000291393ED00F11383 /* Employee Detail */ = {
+			isa = PBXGroup;
+			children = (
+				424FB57D2913D19A0021F4C3 /* View Controller */,
+				424FB57C2913D1930021F4C3 /* View */,
+			);
+			path = "Employee Detail";
+			sourceTree = "<group>";
+		};
 		42D80E39291273F600197817 = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +381,7 @@
 		42D80E44291273F600197817 /* ConsoleBitVishank */ = {
 			isa = PBXGroup;
 			children = (
+				424FB5802913D31F0021F4C3 /* CoreDataManager */,
 				42CFEFE62912BF1D00F11383 /* Storyboards */,
 				42CFEFCE291283A500F11383 /* Utilities */,
 				42CFEFC52912821C00F11383 /* Module */,
@@ -296,7 +390,7 @@
 				42D80E51291273F800197817 /* Assets.xcassets */,
 				42D80E53291273F800197817 /* LaunchScreen.storyboard */,
 				42D80E56291273F800197817 /* Info.plist */,
-				42D80E4E291273F700197817 /* ConsoleBitVishank.xcdatamodeld */,
+				42131DC32913DBD00064AB96 /* ConsoleBitVishank.xcdatamodeld */,
 			);
 			path = ConsoleBitVishank;
 			sourceTree = "<group>";
@@ -336,6 +430,7 @@
 			name = ConsoleBitVishank;
 			packageProductDependencies = (
 				42D80E792912760900197817 /* Alamofire */,
+				42CFEFF42912DBB300F11383 /* SwiftKeychainWrapper */,
 			);
 			productName = ConsoleBitVishank;
 			productReference = 42D80E42291273F600197817 /* ConsoleBitVishank.app */;
@@ -411,6 +506,7 @@
 			mainGroup = 42D80E39291273F600197817;
 			packageReferences = (
 				42D80E782912760800197817 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				42CFEFF32912DBB300F11383 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 42D80E43291273F600197817 /* Products */;
 			projectDirPath = "";
@@ -428,10 +524,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D80E55291273F800197817 /* LaunchScreen.storyboard in Resources */,
-				42D80E52291273F800197817 /* Assets.xcassets in Resources */,
-				42D80E4D291273F700197817 /* Main.storyboard in Resources */,
-				42CFEFE52912ABDB00F11383 /* Dashboard.storyboard in Resources */,
+				424FB5702913BC160021F4C3 /* LaunchScreen.storyboard in Resources */,
+				424FB56F2913BC040021F4C3 /* Assets.xcassets in Resources */,
+				424FB56E2913BBFC0021F4C3 /* Main.storyboard in Resources */,
+				424FB56D2913BBF80021F4C3 /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,23 +552,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				424FB5742913BCE80021F4C3 /* EmployeeDetailTableViewCell.xib in Sources */,
+				424FB5792913C3E70021F4C3 /* CustomImageView.swift in Sources */,
+				424FB5732913BCE40021F4C3 /* EmployeeTableViewCell.xib in Sources */,
 				42CFEFDB29129B6300F11383 /* NSObject + Helper.swift in Sources */,
 				42CFEFE129129FB000F11383 /* EmployeesAPIRouter.swift in Sources */,
 				42CFEFC92912825600F11383 /* LoginModel.swift in Sources */,
 				42CFEFD32912898800F11383 /* AppConstants.swift in Sources */,
-				42D80E50291273F700197817 /* ConsoleBitVishank.xcdatamodeld in Sources */,
+				42CFEFF92912E03600F11383 /* EmployeeTableViewCell.swift in Sources */,
+				424FB56B2913B0AC0021F4C3 /* DetailsHandler.swift in Sources */,
 				42CFEFE32912A0E900F11383 /* EmployeesViewModel.swift in Sources */,
 				42CFEFDD29129C2800F11383 /* ProjectWireframe.swift in Sources */,
+				42CFF003291396C400F11383 /* EmployeeDetailTableViewCell.swift in Sources */,
+				42CFEFFD2913904700F11383 /* Helper.swift in Sources */,
+				424FB57B2913C9770021F4C3 /* NetworkMonitor.swift in Sources */,
 				42CFEFDF29129EE400F11383 /* EmployeesListViewController.swift in Sources */,
+				424FB5682913AD680021F4C3 /* Employee+CoreDataClass.swift in Sources */,
+				424FB5692913AD680021F4C3 /* Employee+CoreDataProperties.swift in Sources */,
 				42CFEFD729129ABC00F11383 /* ServiceLocator.swift in Sources */,
 				42D80E4A291273F700197817 /* LoginViewController.swift in Sources */,
 				42CFEFCB2912826B00F11383 /* EmployeesModel.swift in Sources */,
+				424FB57F2913D1CA0021F4C3 /* ProfileImageViewController.swift in Sources */,
 				42D80E46291273F600197817 /* AppDelegate.swift in Sources */,
 				42D80E48291273F700197817 /* SceneDelegate.swift in Sources */,
 				42CFEFCD2912832100F11383 /* LoginAPIRouter.swift in Sources */,
+				42131DC62913DCBB0064AB96 /* ConsoleBitVishank.xcdatamodeld in Sources */,
 				42CFEFD529128A4C00F11383 /* LoginViewModel.swift in Sources */,
 				42CFEFD929129B2F00F11383 /* Enums.swift in Sources */,
 				42CFEFD1291283C900F11383 /* Constants.swift in Sources */,
+				42CFEFFF291393E900F11383 /* EmployeeDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -822,6 +930,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		42CFEFF32912DBB300F11383 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		42D80E782912760800197817 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -833,6 +949,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		42CFEFF42912DBB300F11383 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42CFEFF32912DBB300F11383 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
 		42D80E792912760900197817 /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 42D80E782912760800197817 /* XCRemoteSwiftPackageReference "Alamofire" */;
@@ -841,12 +962,12 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		42D80E4E291273F700197817 /* ConsoleBitVishank.xcdatamodeld */ = {
+		42131DC32913DBD00064AB96 /* ConsoleBitVishank.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				42D80E4F291273F700197817 /* ConsoleBitVishank.xcdatamodel */,
+				42131DC42913DBD00064AB96 /* ConsoleBitVishank.xcdatamodel */,
 			);
-			currentVersion = 42D80E4F291273F700197817 /* ConsoleBitVishank.xcdatamodel */;
+			currentVersion = 42131DC42913DBD00064AB96 /* ConsoleBitVishank.xcdatamodel */;
 			path = ConsoleBitVishank.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

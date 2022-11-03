@@ -33,4 +33,12 @@ class ServiceLocator {
         return vc
     }
     
+    static func provideEmployeeDetailViewController() -> EmployeeDetailViewController? {
+        let storyBoard = UIStoryboard(name: AppStoryboardName.dashboard.rawValue, bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: EmployeeDetailViewController.className) as? EmployeeDetailViewController
+        return vc
+    }
+    
+    
+    
 }

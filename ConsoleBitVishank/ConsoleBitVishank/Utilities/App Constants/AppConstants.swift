@@ -9,4 +9,5 @@ import Foundation
 
 struct AppConstants {
     static let loggedIn = "isLoggedIn"
+    static let accessToken = "accessToken"
 }
