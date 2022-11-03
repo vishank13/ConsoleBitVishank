@@ -63,9 +63,9 @@ class EmployeesListViewController: UIViewController {
     // MARK: Action Outlets
     //-----------------------
     @IBAction func filterPressed(_ sender: UIBarButtonItem) {
-        ProjectWireframe.navigateToFilterViewController(emp: employees, with: self.navigationController) { filteredList in
-            self.employees = filteredList
-            self.employeesTableView.reloadData()
+        ProjectWireframe.navigateToFilterViewController(emp: employees, with: self.navigationController) { [weak self] filteredList in
+            self?.employees = filteredList
+            self?.employeesTableView.reloadData()
         }
     }
     
